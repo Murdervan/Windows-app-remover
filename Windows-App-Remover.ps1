@@ -1,7 +1,7 @@
 #╔════════════════════════════════════════════════════════╗
 #║                   Windows App Remover                  ║
 #╠════════════════════════════════════════════════════════╣
-#║  TYPE          ▸  PowerShell Script                    ║
+#║  TYPE          ▸  Windows 10/11 Remove app tool        ║
 #║  AUTHOR        ▸  Murdervan / AI                       ║
 #║  NAMESPACE     ▸  https://github.com/Murdervan         ║
 #║  LICENSE       ▸  MIT                                  ║
@@ -190,3 +190,4 @@ do {
     Pause
 }
 while ($true)
+
