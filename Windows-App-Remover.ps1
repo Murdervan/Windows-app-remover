@@ -247,14 +247,14 @@ function Show-Menu {
     Write-Host '+===============================================================+' -ForegroundColor Green
     Write-Host '|                       APP KILLER v2.1                         |' -ForegroundColor Green
     Write-Host '|===============================================================|' -ForegroundColor Green
-    Write-Host '| [1] SINGLE TARGET STRIKE         [HACK THE ONE]               |' -ForegroundColor Cyan
-    Write-Host '| [2] NUCLEAR APP ANNIHILATION     [WIPE ALL]                   |' -ForegroundColor Cyan
-    Write-Host '| [3] ACCESS KILL LOG              [VIEW TARGETS]               |' -ForegroundColor Cyan
-    Write-Host '| [4] WIPE FORENSICS               [CLEAN TRACES]               |' -ForegroundColor Cyan
+    Write-Host '| [1] SINGLE TARGET STRIKE         [REMOVE ONE APP]             |' -ForegroundColor Cyan
+    Write-Host '| [2] NUCLEAR APP ANNIHILATION     [WIPE ALL APPS]              |' -ForegroundColor Cyan
+    Write-Host '| [3] ACCESS KILL LOG              [VIEW LOG]                   |' -ForegroundColor Cyan
+    Write-Host '| [4] WIPE FORENSICS               [CLEAN LOG]                  |' -ForegroundColor Cyan
     Write-Host '| [5] SYSTEM RECON SCAN            [SCAN LIVE]                  |' -ForegroundColor Cyan
     Write-Host '| [Q] TERMINATE SESSION            [EXIT HACK]                  |' -ForegroundColor Red
     Write-Host '|===============================================================|' -ForegroundColor Green
-    Write-Host '|                      github/murdervan                         |' -ForegroundColor Yellow
+    Write-Host '|                      GITHUB/MURDERVAN                         |' -ForegroundColor Green
     Write-Host '+===============================================================+' -ForegroundColor Green
     Write-Host ''
 }
@@ -292,7 +292,7 @@ while ($true) {
             Write-Host ''
             Write-Host '          NUCLEAR PROTOCOL ACTIVATED' -ForegroundColor Red -BackgroundColor Black
             Write-Host ''
-            $conf = Read-Host 'ENTER "NUKE" TO DEPLOY > '
+            $conf = Read-Host 'ENTER "NUKE" TO KILL/REMOVE ALL APPS > '
             if ($conf -eq 'NUKE') {
                 Write-Host 'DEPLOYING NUCLEAR STRIKE...' -ForegroundColor Red
                 foreach ($cat in $Categories.Keys) {
