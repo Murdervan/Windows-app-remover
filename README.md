@@ -1,6 +1,10 @@
 # Windows-app-remover
 
 PowerShell tool for removing built-in Windows 10/11 apps for clean setups and system preparation.
+How to use.
+1. Download folder "Windows-app-remover"
+2. Run the "RunAsAdmin.bat"
+3. Enjoy!
 
 ### Features
 
@@ -13,6 +17,9 @@ Menu-based selection
 Logging with timestamps
 
 Portable (USB-ready)
+
+See system spec (good for sale of your pc)
+- Total clean before sale
 
 ### Notes
 
