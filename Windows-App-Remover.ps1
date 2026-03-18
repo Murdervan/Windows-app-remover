@@ -196,7 +196,6 @@ $Categories = @{
         @{N='Skype'; P='SkypeApp'}
         @{N='Mail & Calendar'; P='windowscommunicationsapps'}
         @{N='Outlook New'; P='OutlookForWindows'}
-        @{N='People'; P='People'}
     )
     "PRODUCTIVITY" = @(
         @{N='To Do'; P='Todos'}
