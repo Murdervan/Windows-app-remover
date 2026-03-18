@@ -1,137 +1,26 @@
 # Windows-app-remover
 
-A PowerShell-based Windows 10 & 11 built-in app removal tool designed for PC refurbishment, deployment, and clean system setups.
+PowerShell tool for removing built-in Windows 10/11 apps for clean setups and system preparation.
 
-This project aims to reliably and safely remove unwanted built-in Windows applications, including AppX and provisioned packages, with logging, menu selection, and OneDrive full uninstall support.
+###Features
 
-⚠️ This project is a work in progress. Community help is strongly encouraged.
+Removes AppX & provisioned packages
 
-🔧 Project Goals
+Works on Windows 10 & 11
 
-The goal of this repository is to create a clean, stable, and reliable Windows app removal script that:
+Menu-based selection
 
-Removes all listed built-in apps 100%, if technically possible
+Logging with timestamps
 
-Handles AppX + Provisioned packages correctly
+Portable (USB-ready)
 
-Avoids system breakage, errors, or partial removals
+###Notes
 
-Works consistently across Windows 10 and Windows 11
+Some apps cannot be removed (system-protected)
+- Some apps require manual removal
 
-Can be safely used for refurbishment and redeployment
+Script logs everything and fails safely
 
-If something cannot be removed due to Microsoft restrictions, the script should:
+###Contributing
 
-Detect it correctly
-
-Log it clearly
-
-Fail gracefully (no crashes, no broken state)
-
-📌 Current Features
-
-✅ Admin privilege check
-
-✅ AppX + Provisioned package removal
-
-✅ Full OneDrive uninstall (process, setup, leftovers)
-
-✅ Menu-driven selection (single app or remove all)
-
-✅ Logging with timestamps
-
-✅ USB / portable execution support
-
-🚧 Known Challenges
-
-Some Windows apps are:
-
-System-locked
-
-Reinstalled automatically by Windows
-
-Protected by dependencies or servicing stack rules
-
-Examples:
-
-Get Help
-
-Certain system frameworks
-
-Region or OEM-specific packages
-
-We are looking for clean, correct solutions — not hacks that break Windows updates or system integrity.
-
-🤝 Call for Help (Contributors Wanted)
-
-This is where YOU come in.
-
-I am actively looking for help with:
-
-🧹 Code cleanup and refactoring
-
-🧠 Better detection logic for installed vs provisioned apps
-
-🪟 Windows 10 vs Windows 11 edge cases
-
-📦 Apps that fail to uninstall or reinstall themselves
-
-🛡️ Safe handling of protected/system apps
-
-📝 Documentation improvements
-
-If you know:
-
-PowerShell best practices
-
-Windows internals
-
-AppX / provisioning behavior
-
-Enterprise deployment or MDT / Intune scenarios
-
-👉 Your input is highly appreciated.
-
-Even small improvements, comments, or app removal confirmations help.
-
-❗ Important Disclaimer
-
-This script:
-
-Is provided as-is
-
-Makes system-level changes
-
-Should be tested in VMs or test machines first
-
-Use at your own risk.
-
-📂 Repository
-
-GitHub: https://github.com/Murdervan/Windows-app-remover
-
-🧠 Philosophy
-
-This project values:
-
-Clean code
-
-Predictable behavior
-
-Transparency over silent failures
-
-Community-driven improvement
-
-The goal is not to "force-remove" everything at all costs — but to remove everything that can be removed, correctly.
-
-📬 Contact / Contributions
-
-Pull requests: Welcome
-
-Issues: Encouraged
-
-Suggestions: Please share
-
-Let’s make Windows cleanup actually clean.
-
-— Murdervan - AI TEXT! danish here 
+Pull requests and improvements are welcome.
