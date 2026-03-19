@@ -252,6 +252,7 @@ echo MEDIA
     echo   - Camera
     echo   - Voice Recorder
     echo   - Photos
+    echo   - Clipchamp
     echo.  
 echo XBOX
     echo   - Xbox App
@@ -265,6 +266,7 @@ echo COMMUNICATION
     echo   - Skype
     echo   - Mail - Calendar
     echo   - Outlook New
+    echo   - LinkedIn
     echo.
 echo PRODUCTIVITY
     echo   - To Do
@@ -275,8 +277,6 @@ echo PRODUCTIVITY
     echo.
 echo BLOAT
     echo   - Copilot
-    echo   - Clipchamp
-    echo   - LinkedIn
     echo   - Cortana
     echo   - Feedback Hub
     echo   - Get Started
@@ -304,9 +304,6 @@ echo OTHER
     echo   - Phone Link
     echo   - Family Safety
     echo   - Store Ads
-    echo   - Advertising XAML
-    echo   - Microsoft Wallet
-    echo   - Microsoft Pay
     echo.
     pause
 )
