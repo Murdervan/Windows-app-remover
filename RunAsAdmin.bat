@@ -304,6 +304,7 @@ echo OTHER
     echo   - Phone Link
     echo   - Family Safety
     echo   - Store Ads
+    echo   - Power Automate
     echo.
     pause
 )
