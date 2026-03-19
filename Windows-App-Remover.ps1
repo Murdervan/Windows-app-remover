@@ -64,7 +64,7 @@ function Show-MatrixRain {
         Clear-Host
         foreach ($line in $screen) { Write-Host $line -NoNewline; Write-Host "`r`n" -NoNewline }
 
-        Start-Sleep -Milliseconds 10
+        Start-Sleep -Milliseconds 3
     }
 
     # Clear baggrund efter animation
