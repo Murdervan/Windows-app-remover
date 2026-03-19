@@ -19,7 +19,7 @@ Logging with timestamps
 Portable (USB-ready)
 
 See system spec (good for sale of your pc)
-- Total clean before sale
+- It can permanently delete files and also securely erase previously deleted ones.
 
 ### Notes
 
