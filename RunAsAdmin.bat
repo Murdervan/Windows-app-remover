@@ -124,13 +124,13 @@ echo      [####      ] Loading GPU...
 timeout /t 1 >nul
 echo      [#####     ] Loading Storage...
 timeout /t 1 >nul
-echo      [##########] Done.!
+echo      [##########] Done.
 timeout /t 1 >nul
 
 cls
 echo.
 echo      =========================================================================
-echo       QUICK SPEC INFO - WAIT IT CAN TAKE SOME TIME!
+echo       QUICK SPEC INFO
 echo      =========================================================================
 echo.
 
@@ -148,20 +148,18 @@ set /a RAMGB=%RAM:~0,-9%
 :: --- GPU ---
 for /f "delims=" %%A in ('powershell -NoProfile -Command "(Get-CimInstance Win32_VideoController | Where-Object {$_.Status -eq 'OK'} | Select-Object -First 1 -ExpandProperty Name)"') do set GPU=%%A
 
-:: --- GPU VRAM (safe fallback)
+:: --- GPU VRAM
 set "VRAMGB=Unknown"
 for /f "delims=" %%A in ('powershell -NoProfile -Command "try { $gpu = Get-CimInstance Win32_VideoController | Select-Object -First 1; if ($gpu.AdapterRAM) { [math]::Round($gpu.AdapterRAM / 1GB) } } catch { '' }"') do set "VRAMGB=%%A"
 if "!VRAMGB!"=="" set "VRAMGB=Unknown"
 
-:: --- C: Drive ---
+:: --- Drives ---
 for /f "delims=" %%A in ('powershell -NoProfile -Command "(Get-PSDrive C).Used + (Get-PSDrive C).Free"') do set CDRIVE=%%A
 set /a CGB=%CDRIVE:~0,-9%
-
-:: --- D: Drive ---
 for /f "delims=" %%A in ('powershell -NoProfile -Command "if (Test-Path D:) { (Get-PSDrive D).Used + (Get-PSDrive D).Free } else { 0 }"') do set DDRIVE=%%A
 if not %DDRIVE%==0 set /a DGB=%DDRIVE:~0,-9%
 
-:: --- OUTPUT (Korrekt rækkefølge)
+:: --- Output ---
 echo      - OS: %OSNAME% - Version %OSVER%
 echo      - CPU: %CPU%
 echo      - GPU: %GPU%
@@ -172,6 +170,27 @@ if not %DDRIVE%==0 echo      - D: Drive: %DGB% GB
 echo.
 echo      =========================================================================
 echo.
+echo      [C] Clean Harddisk (wipe free space)
+echo      [B] Back to Main Menu
+echo.
+set /p diskchoice=      Enter selection: 
+
+if /i "%diskchoice%"=="C" (
+    cls
+    echo.
+    echo      [INFO] Cleaning free space on C: and D: drives...
+    echo      This may take a long time depending on drive size.
+    echo.
+    cipher /w:C:
+    if exist D: cipher /w:D:
+    echo.
+    echo      [INFO] Drive cleanup complete.
+    pause
+    goto SYSINFO
+)
+if /i "%diskchoice%"=="B" goto MAINMENU
+
+goto SYSINFO
 
 pause
 endlocal
