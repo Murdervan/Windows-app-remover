@@ -216,8 +216,9 @@ echo   - Safely remove bloatware and unnecessary apps
 echo   - Nuclear deletion mode: wipe entire categories at once
 echo   - Activity logging: track removed or missing apps
 echo   - Admin check: automatically verifies elevated rights
-echo   - Multi-category app management: System, Media, Xbox, Edge, etc.
+echo   - Multi-category app management: System, Media, Xbox, Paint, etc.
 echo   - System scan: see which apps are currently installed
+echo   - SOME APPS LIKE OneDrive, Edge AND Xbox MAY NEED TO BE REMOVED MANUALLY
 echo.
 echo App List:
 echo      [1] See full app list
