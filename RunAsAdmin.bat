@@ -16,7 +16,7 @@ echo     ╚═╝  ╚═╝╚═╝     ╚═╝         ╚═╝  ╚═�
 echo.
 echo      =========================================================================
 echo       APP KILLER v2.1 - MAIN CONTROL PANEL
-echo       Created by: Murdervan
+echo       Created by: Murdervan - Github.com/murdervan
 echo      =========================================================================
 echo.
 echo      [1] Launch APP KILLER Terminal (Admin)
@@ -170,7 +170,7 @@ if not %DDRIVE%==0 echo      - D: Drive: %DGB% GB
 echo.
 echo      =========================================================================
 echo.
-echo      [C] Clean Harddisk (wipe free space)
+echo      [C] Clean Harddisk (Good before sale of PC)
 echo      [B] Back to Main Menu
 echo.
 set /p diskchoice=      Enter selection: 
@@ -219,13 +219,94 @@ echo   - Admin check: automatically verifies elevated rights
 echo   - Multi-category app management: System, Media, Xbox, Edge, etc.
 echo   - System scan: see which apps are currently installed
 echo.
+echo App List:
+echo      [1] See full app list
+echo      [B] Back to Main Menu
+echo.
 echo Supported Platforms:
 echo   Windows 10 / 11 (All editions)
     echo.
     echo      =========================================================================
     echo.
+set /p diskchoice=      Enter selection: 
+
+)
+if /i "%diskchoice%"=="1" (
+    cls
+echo SYSTEM
+    echo   - Calculator
+    echo   - Paint
+    echo   - Clock
+    echo   - Windows Store
+    echo   - Store Core
+    echo   - OneDrive
+    echo   - Quick Assist
+    echo.
+echo MEDIA
+    echo   - Media Player
+    echo   - Music
+    echo   - Camera
+    echo   - Voice Recorder
+    echo   - Photos
+    echo.  
+echo XBOX
+    echo   - Xbox App
+    echo   - Xbox Game Bar
+    echo   - Xbox Identity Provider
+    echo   - Xbox Speech To Text
+    echo   - Xbox TCUI
+    echo.
+echo COMMUNICATION
+    echo   - Teams Personal
+    echo   - Skype
+    echo   - Mail - Calendar
+    echo   - Outlook New
+    echo.
+echo PRODUCTIVITY
+    echo   - To Do
+    echo   - Sticky Notes
+    echo   - OneNote
+    echo   - Office Hub
+    echo   - Dev Home
+    echo.
+echo BLOAT
+    echo   - Copilot
+    echo   - Clipchamp
+    echo   - LinkedIn
+    echo   - Cortana
+    echo   - Feedback Hub
+    echo   - Get Started
+    echo   - News
+    echo   - Weather
+    echo   - Solitaire
+    echo.
+echo EDGE / WEB
+    echo   - Edge WebView2
+    echo   - Web Experience Pack
+    echo   - Bing Search
+    echo.
+echo 3D / LEGACY
+    echo   - 3D Viewer
+    echo   - Mixed Reality Portal
+    echo   - Print 3D
+    echo   - Paint 3D
+    echo.
+echo EXTENSIONS
+    echo   - HEIF Image Extensions
+    echo   - Web Media Extensions
+    echo   - Raw Image Extension
+    echo.
+echo OTHER
+    echo   - Phone Link
+    echo   - Family Safety
+    echo   - Store Ads
+    echo   - Advertising XAML
+    echo   - Microsoft Wallet
+    echo   - Microsoft Pay
+    echo.
     pause
 )
+if /i "%diskchoice%"=="B" goto MAINMENU
 
 goto MAINMENU
 
@@ -239,7 +320,7 @@ echo       ██╔══██╗   ╚██╔╝    ██╔══╝
 echo       ██████╔╝    ██║     ███████╗
 echo       ╚═════╝     ╚═╝     ╚══════╝
 echo.
-echo      [BYE. Visit Github.com/murdervan]
+echo      [See you soon.!]
 echo.
 timeout /t 3 /nobreak >nul
 exit /b 0
