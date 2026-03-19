@@ -19,8 +19,9 @@ Logging with timestamps
 Portable (USB-ready)
 
 See system spec (good for sale of your pc)
-- It can permanently delete files and also securely erase previously deleted ones.
-
+- It can permanently delete files and also securely erase previously deleted ones
+  it does not delete existing files—only traces of files that have already been deleted.
+  
 ### Notes
 
 Some apps cannot be removed (system-protected)
